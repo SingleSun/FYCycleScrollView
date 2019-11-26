@@ -174,6 +174,13 @@
     
 }
 
+#pragma mark 点击
+-(void)imageScrollClick{
+    if (self.cycleScrollViewClick) {
+        self.cycleScrollViewClick(self.currentIndex);
+    }
+}
+
 -(void)timerCycleScrollView{
     
     [_bgScrollView setContentOffset:CGPointMake(kWidth*2, 0) animated:YES];
@@ -206,6 +213,9 @@
  
     if (_middleImageView == nil) {
         _middleImageView = [[UIImageView alloc]init];
+        UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(imageScrollClick)];
+        _middleImageView.userInteractionEnabled = YES;
+        [_middleImageView addGestureRecognizer:tap];
     }
     return _middleImageView;
 }

@@ -10,6 +10,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef void(^CycleScrollViewClickBlock)(NSInteger index);
+
 @interface FYScrollView : UIView
 
 /**加载本地图片*/
@@ -17,6 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**加载网络图片*/
 @property(nonatomic,strong)NSArray * imagesUrl;
 
+@property(nonatomic,copy)CycleScrollViewClickBlock cycleScrollViewClick;
 
 
 @end
