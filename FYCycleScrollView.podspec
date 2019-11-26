@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "FYCycleScrollView"
-  spec.version      = "1.0.0"
+  spec.version      = "1.0.1"
   spec.summary      = "A smiple cycle scroll view"
 
   # This description is used to generate tags and improve search results.
