@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FYCustomPageControl.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -21,6 +22,19 @@ typedef void(^CycleScrollViewClickBlock)(NSInteger index);
 
 @property(nonatomic,copy)CycleScrollViewClickBlock cycleScrollViewClick;
 
+/// 设置小白点大小
+@property(nonatomic,assign)CGFloat raduis;
+/// 小白点样式
+@property(nonatomic,assign)FYPageControlMode pageControlMode;
+/// 选中小白点颜色
+@property(nonatomic,strong)UIColor *currentColor;
+/// 未选中小白点颜色
+@property(nonatomic,strong)UIColor *normalColor;
+
+/// 选中小白点图片
+@property(nonatomic,strong)UIImage *currentImage;
+/// 未选中小白点图片
+@property(nonatomic,strong)UIImage *normalImage;
 
 @end
 

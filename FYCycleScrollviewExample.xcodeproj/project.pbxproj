@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A6A1D3FC238CBD8E002BB309 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A1D3FA238CBD8E002BB309 /* SecondViewController.m */; };
+		A6A1D3FF238E0617002BB309 /* FYCustomPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A1D3FE238E0617002BB309 /* FYCustomPageControl.m */; };
 		A6C4519C23852825001E6EF1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C4519B23852825001E6EF1 /* AppDelegate.m */; };
 		A6C451A223852825001E6EF1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C451A123852825001E6EF1 /* ViewController.m */; };
 		A6C451A723852834001E6EF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6C451A623852834001E6EF1 /* Assets.xcassets */; };
@@ -48,6 +49,8 @@
 		805E8472CEDC8546233B780A /* Pods-FYCycleScrollviewExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FYCycleScrollviewExample.release.xcconfig"; path = "Target Support Files/Pods-FYCycleScrollviewExample/Pods-FYCycleScrollviewExample.release.xcconfig"; sourceTree = "<group>"; };
 		A6A1D3FA238CBD8E002BB309 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		A6A1D3FB238CBD8E002BB309 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		A6A1D3FD238E0617002BB309 /* FYCustomPageControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYCustomPageControl.h; sourceTree = "<group>"; };
+		A6A1D3FE238E0617002BB309 /* FYCustomPageControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FYCustomPageControl.m; sourceTree = "<group>"; };
 		A6C4519723852824001E6EF1 /* FYCycleScrollviewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FYCycleScrollviewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6C4519A23852825001E6EF1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A6C4519B23852825001E6EF1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -180,6 +183,8 @@
 				A6C451D3238B6A5F001E6EF1 /* source */,
 				A6C451D0238B6598001E6EF1 /* FYScrollView.h */,
 				A6C451D1238B6598001E6EF1 /* FYScrollView.m */,
+				A6A1D3FD238E0617002BB309 /* FYCustomPageControl.h */,
+				A6A1D3FE238E0617002BB309 /* FYCustomPageControl.m */,
 			);
 			path = FYCycleScrollView;
 			sourceTree = "<group>";
@@ -376,6 +381,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6A1D3FF238E0617002BB309 /* FYCustomPageControl.m in Sources */,
 				A6A1D3FC238CBD8E002BB309 /* SecondViewController.m in Sources */,
 				A6C451A223852825001E6EF1 /* ViewController.m in Sources */,
 				A6C4519C23852825001E6EF1 /* AppDelegate.m in Sources */,

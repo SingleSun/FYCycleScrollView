@@ -20,7 +20,7 @@
 @property(nonatomic,strong)UIImageView * leftImageView;
 @property(nonatomic,strong)UIImageView * middleImageView;
 @property(nonatomic,strong)UIImageView * rightImageView;
-@property(nonatomic,strong)UIPageControl * pageControl;
+@property(nonatomic,strong)FYCustomPageControl * pageControl;
 @property(nonatomic,strong)NSTimer * timer;
 /**当前展示图片的下标*/
 @property(nonatomic,assign)NSInteger currentIndex;
@@ -131,6 +131,46 @@
     self.pageControl.currentPage = self.currentIndex;
 }
 
+-(void)setCurrentColor:(UIColor *)currentColor{
+ 
+    _currentColor = currentColor;
+    //如果是系统默认样式，可以自定义小白点颜色
+    if(self.pageControlMode == FYPageControlModeDefault){
+        self.pageControl.currentPageIndicatorTintColor = currentColor;
+    }
+}
+
+-(void)setNormalColor:(UIColor *)normalColor{
+ 
+    _normalColor = normalColor;
+    //如果是系统默认样式，可以自定义小白点颜色
+    if(self.pageControlMode == FYPageControlModeDefault){
+        self.pageControl.pageIndicatorTintColor = normalColor;
+    }
+}
+
+-(void)setCurrentImage:(UIImage *)currentImage{
+ 
+    _currentImage = currentImage;
+    //如果是自定义样式，可以自定义小白点图片
+    if(self.pageControlMode == FYPageControlModeCustom){
+        self.pageControl.currentPageImg = currentImage;
+    }
+}
+
+-(void)setNormalImage:(UIImage *)normalImage{
+    _normalImage = normalImage;
+    //如果是自定义样式，可以自定义小白点图片
+    if(self.pageControlMode == FYPageControlModeCustom){
+        self.pageControl.pageImg = normalImage;
+    }
+}
+
+-(void)setRaduis:(CGFloat)raduis{
+    _raduis = raduis;
+    self.pageControl.raduis = raduis;
+}
+
 #pragma mark UIScrollViewDeleget
 
 -(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
@@ -231,7 +271,7 @@
 -(UIPageControl *)pageControl{
  
     if (_pageControl == nil) {
-        _pageControl = [[UIPageControl alloc]init];
+        _pageControl = [[FYCustomPageControl alloc]init];
         _pageControl.currentPageIndicatorTintColor = [UIColor whiteColor];
         _pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
     }
